@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EUGENE B. QUILLA</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f6fa;
+            color: #0e0000;
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            background-color: #140101;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav h2 {
+            color: #063750;
+            margin-bottom: 10px;
+        }
+
+        nav a {
+            color: rgb(43, 4, 4);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            color: #1b0450;
+        }
+
+        /* HOME */
+
+        #home {
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #f7f7f7e0;
+            padding: 40px;
+        }
+
+        .home-content {
+            max-width: 700px;
+        }
+
+        .profile {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #f3f4f5;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        h1 span {
+            color: #08a2df;
+        }
+
+        .home-content p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #0876be;
+            color: rgb(66, 4, 4);
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #eeeff0;
+        }
+
+        /* GENERAL */
+
+        section {
+            padding: 70px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .title h2 {
+            color: #1010c7;
+            font-size: 32px;
+        }
+
+        /* ABOUT */
+
+        #about {
+            background-color: rgb(233, 231, 240);
+        }
+
+        .about {
+            text-align: center;
+        }
+
+        .about p {
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        /* SKILLS */
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .skill {
+            background-color: rgb(240, 231, 238);
+            padding: 20px 30px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            text-align: center;
+            min-width: 150px;
+        }
+
+        .skill h3 {
+            color: #32256e;
+        }
+
+        /* PROJECTS */
+
+        #projects {
+            background-color: rgb(235, 233, 240);
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .project {
+            width: 260px;
+            background-color: #f4f4f4;
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .project h3 {
+            color: #00a8ff;
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            color: #555;
+        }
+
+        /* EDUCATION */
+
+        .education {
+            text-align: center;
+        }
+
+        .education-box {
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .education-box h3 {
+            color: #00a8ff;
+        }
+
+        /* CONTACT */
+
+        #contact {
+            background-color: white;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 10px;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background-color: #222;
+            color: rgb(145, 6, 6);
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 600px) {
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            h1 {
+                font-size: 35px;
+            }
+
+            .profile {
+                width: 150px;
+                height: 150px;
+            }
+
+            .project {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+
+        <h2>EUGENE B. QUILLA</h2>
+
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+
+    <!-- HOME -->
+
+    <section id="home">
+
+        <div class="home-content">
+
+            <!-- YOUR PHOTO -->
+            <img
+                src="genn.jpg"
+                alt="Eugene B. Quilla"
+                class="profile"
+            >
+
+            <h1>
+                Hello, I'm
+                <span>Eugene</span>
+            </h1>
+
+            <p>
+                Second-Year College Student
+                and Aspiring Web Developer
+            </p>
+
+            <p>
+                Welcome to my personal coding portfolio.
+            </p>
+
+            <a href="#about" class="button">
+                Learn More
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section id="about">
+
+        <div class="container">
+
+            <div class="title">
+                <h2>About Me</h2>
+            </div>
+
+            <div class="about">
+
+                <p>
+                    My name is <b>EUGENE B. QUILLA</b>.
+                    I am a second-year college student
+                    interested in programming, web
+                    development, and technology.
+                </p>
+
+                <br>
+
+                <p>
+                    I am currently learning how to create
+                    websites using HTML, CSS, and JavaScript.
+                    My goal is to improve my coding skills
+                    and become a professional developer.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SKILLS -->
+
+    <section id="skills">
+
+        <div class="container">
+
+            <div class="title">
+
+                <h2>My Skills</h2>
+
+            </div>
+
+            <div class="skills">
+
+                <div class="skill">
+                    <h3>HTML</h3>
+                    <p>I can create and structure basic web pages.</p>
+                </div>
+
+                <div class="skill">
+                    <h3>CSS</h3>
+                    <p>I can design and style websites.</p>
+                </div>
+
+                <div class="skill">
+                    <h3>JavaScript</h3>
+                    <p>I know basic scripting and webpage interaction</p>
+                </div>
+
+                <div class="skill">
+                    <h3>Programming</h3>
+                    <p>I understand basic programming concepts and coding</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+
+    <section id="projects">
+
+        <div class="container">
+
+            <div class="title">
+
+                <h2>My Projects</h2>
+
+            </div>
+
+            <div class="projects">
+
+                <div class="project">
+
+                    <h3>Personal Website</h3>
+
+                    <p>
+                        A simple website about myself using HTML and CSS.
+                    </p>
+
+                </div>
+
+
+                <div class="project">
+
+                    <h3>Calculator</h3>
+
+                    <p>
+                        A basic calculator made with HTML, CSS and JavaScript.
+                    </p>
+
+                </div>
+
+
+                <div class="project">
+
+                    <h3>To-Do List</h3>
+
+                    <p>
+                       A simple app for adding and managing daily tasks.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- EDUCATION -->
+
+    <section id="education">
+
+        <div class="container">
+
+            <div class="title">
+
+                <h2>Education</h2>
+
+            </div>
+
+            <div class="education">
+
+                <div class="education-box">
+
+                    <h3>College - Second Year</h3>
+
+                    <p>
+                        Currently studying Information Technology
+                        and learning programming and web development.
+                    </p>
+
+                </div>
+
+
+                <div class="education-box">
+
+                    <h3>Senior High School</h3>
+
+                    <p>
+                        Completed Senior High School.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section id="contact">
+
+        <div class="container">
+
+            <div class="title">
+
+                <h2>Contact Me</h2>
+
+            </div>
+
+            <div class="contact">
+
+                <p>
+                    <b>Name:</b>
+                    EUGENE B. QUILLA
+                </p>
+
+                <p>
+                    <b>Email:</b>
+                    your-quillaeugene13@gmail.com
+                </p>
+
+                <p>
+                    <b>Location:</b>
+                    Philippines
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 EUGENE B. QUILLA
+        </p>
+
+        <p>
+            My Coding Portfolio
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        alert("Welcome to Eugene B. Quilla's Portfolio!");
+
+    </script>
+
+</body>
+</html>
